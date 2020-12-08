@@ -46,10 +46,3 @@ bool CircularBuffer::isEmpty() {
   }
   return false;
 }
-
-void CircularBuffer::test() {
-  for(int i = 0; i < datas.size(); i++) {
-    std::cout<<datas[i]<<" ";
-  }
-  std::cout<<std::endl;
-}

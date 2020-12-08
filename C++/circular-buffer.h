@@ -11,7 +11,6 @@ public:
   int read_data();
   bool isFull();
   bool isEmpty();
-  void test();
 private:
   std::vector<int> datas; //only allow to buffer to hold (size -1) items
   int * read_ptr;

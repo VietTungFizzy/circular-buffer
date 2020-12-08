@@ -1,7 +1,9 @@
 #include "circular-buffer.h"
+#include "circular-buffer-index-version.h"
 
 int main(int argc, char* argv[]) {
-  CircularBuffer * c = new CircularBuffer(5);
+  //CircularBuffer * c = new CircularBuffer(5);
+  CircularBufferIndex * c = new CircularBufferIndex(5);
   c->insert(5);
   c->insert(10);
   c->insert(15);
