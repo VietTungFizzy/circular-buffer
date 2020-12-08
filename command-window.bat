@@ -1,0 +1,1 @@
+g++ -g -Wall main.cpp circular-buffer.cpp -o a.exe

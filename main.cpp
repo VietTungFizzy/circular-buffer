@@ -6,8 +6,23 @@ int main(int argc, char* argv[]) {
   c->insert(10);
   c->insert(15);
   c->insert(20);
-  c->read_data();
+  c->insert(25);
+  c->insert(30);
+
+  std::cout<<c->read_data()<<std::endl;
+  std::cout<<c->read_data()<<std::endl;
+  std::cout<<c->read_data()<<std::endl;
+  std::cout<<c->read_data()<<std::endl;
+  std::cout<<c->read_data()<<std::endl;
+  std::cout<<std::endl;
+
   c->insert(-5);
-  c->read_data();
+
+  std::cout<<c->read_data()<<std::endl;
+  std::cout<<c->read_data()<<std::endl;
+  std::cout<<c->read_data()<<std::endl;
+  std::cout<<c->read_data()<<std::endl;
+  std::cout<<c->read_data()<<std::endl;
+
   return 0;
 }
