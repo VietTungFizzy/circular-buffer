@@ -14,11 +14,11 @@ public:
     this->default_value = default_value;
   }
   void insert(T data) {
-     if(isFull()) {
-    std::cout<<"Start overwriting....\n";
-    *write_ptr = data;
-    write_ptr++;
-    if(write_ptr == THE_END_OF_BUFFER) write_ptr = &datas[0];
+    if(isFull()) {
+      //std::cout<<"Start overwriting....\n";
+      *write_ptr = data;
+      write_ptr++;
+      if(write_ptr == THE_END_OF_BUFFER) write_ptr = &datas[0];
     }
     else {
       *write_ptr = data;
@@ -28,8 +28,8 @@ public:
     }
   }
   T read_data() {
-    if(isEmpty() == true) return -1;
-
+    if(isEmpty() == true) return default_value;
+    //std::cout<<amount_of_data_in_buffer <<"\n";
     T temp = *read_ptr;
     *read_ptr = default_value;
     read_ptr++;
@@ -39,15 +39,13 @@ public:
     return temp;
   }
   bool isFull() {
-    if(amount_of_data_in_buffer == datas.size() && write_ptr == read_ptr){
-      //std::cout<<"Buffer is full\n";
+    if(amount_of_data_in_buffer >= datas.size()){
       return true;
     }
     return false;
   }
   bool isEmpty() {
-    if(amount_of_data_in_buffer == 0 && write_ptr == read_ptr){
-    //std::cout<<"Buffer is empty\n";
+    if(amount_of_data_in_buffer == 0){
       return true;
     }
     return false;

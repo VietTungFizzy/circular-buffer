@@ -6,7 +6,7 @@ CircularBufferIndex::CircularBufferIndex(int size) {
 }
 void CircularBufferIndex::insert(int data) {
   if(isFull()) {
-    std::cout<<"Start overwriting.....\n";
+    std::cout<<"Start overwriting.....\r";
     datas[read_index] = data;
     read_index = (read_index + 1) % datas.size();
   }
