@@ -13,5 +13,5 @@ private:
   std::vector<int> datas;
   int read_index;
   int write_index;
-  int amount_of_data_in_buffer;
+  unsigned int amount_of_data_in_buffer;
 };
