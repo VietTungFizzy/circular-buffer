@@ -8,7 +8,7 @@ Milestone:
 
 TODO LIST:
 - C [ ]
-- C++ [x]
+- C++ [ ]
 - JAVA [ ]
 - PYTHON [ ]
 - PHP [ ]
